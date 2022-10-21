@@ -1,0 +1,7 @@
+zarr,asciitree
+zarr,fasteners
+zarr,numpy
+zarr,numcodecs
+numcodecs,numpy
+numcodecs,typing_extensions
+numcodecs,entrypoints

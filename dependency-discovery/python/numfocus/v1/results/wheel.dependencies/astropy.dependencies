@@ -1,0 +1,9 @@
+astropy,pyerfa
+astropy,packaging
+astropy,pyyaml
+astropy,numpy
+pyerfa,numpy
+packaging,pyparsing
+pyparsing,jinja2
+pyparsing,railroad_diagrams
+jinja2,markupsafe
