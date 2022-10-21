@@ -1,0 +1,11 @@
+xarray,pandas
+xarray,packaging
+xarray,numpy
+pandas,pytz
+pandas,python_dateutil
+pandas,numpy
+python_dateutil,six
+packaging,pyparsing
+pyparsing,jinja2
+pyparsing,railroad_diagrams
+jinja2,markupsafe
