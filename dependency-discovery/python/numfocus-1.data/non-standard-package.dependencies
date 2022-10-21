@@ -1,0 +1,8 @@
+arviz,requirements.txt
+astropy,pyproject.toml,has pyerfa as erfa
+blosc,,requirements.txt should be ignored!
+blokeh,pyproject.toml
+cantera,interfaces/python_minimal/setup.cfg.in
+dask,setup.py
+mdanalysis,package/setup.py
+sgkit,requirements.txt OR setup.cfg

@@ -1,0 +1,42 @@
+{"query":"fragment FileMatchFields on FileMatch {
+                repository {
+                    name
+                    url
+                }
+                file {
+                    name
+                    path
+                    url
+                    content
+                    commit {
+                        oid
+                    }
+                }
+                lineMatches {
+                    preview
+                    lineNumber
+                    offsetAndLengths
+                    limitHit
+                }
+            }
+
+
+          query ($query: String!) {
+            site {
+                buildVersion
+            }
+            search(query: $query) {
+              results {
+                results{
+                  ... on FileMatch {
+                    ...FileMatchFields 
+                  }
+                }
+                timedout {
+                  name
+                }
+                resultCount
+              }
+            }
+          }
+","variables":{"query":"context:global repo:github.com/astropy/astropy$ repohasfile:setup.cfg"}}
