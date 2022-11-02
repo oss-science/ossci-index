@@ -9,7 +9,7 @@ def _main(argv = None):
         argv = sys.argv
 
     parser = argparse.ArgumentParser(argv[0], description = 'Looks in the dir which contains several files with contents à la "package,dependency".' 
-    + ' Prints out the packages which have NO dependencies')
+    + ' Prints out the packages which have NO dependencies (it does NOT eliminate duplicates)')
     parser.add_argument('dependecyFilesDir', type = str, help = 'Path to the dir containing the dependency files')
     args = parser.parse_args(args = argv[1: ])
 
@@ -34,7 +34,7 @@ def _main(argv = None):
         for up in dependencySet:
             if up not in dependencies:
                 print(up)
-                
+
 
 if __name__ == '__main__':
     sys.exit(_main())
