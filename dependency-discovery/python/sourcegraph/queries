@@ -1,0 +1,3 @@
+file:^setup\.py$ content:install_requires\s*=\s*\[.*('|")numpy('|")\s*.*\]
+
+context:global file:^setup\.py$ content:install_requires\s*=\s*\[.*('|")numpy('|")\s*.*\] patternType:regexp
